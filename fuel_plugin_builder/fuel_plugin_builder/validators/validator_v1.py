@@ -57,7 +57,8 @@ class ValidatorV1(BaseValidator):
 
         schemas = {
             'puppet': self.schema.puppet_parameters,
-            'shell': self.schema.shell_parameters}
+            'shell': self.schema.shell_parameters,
+            'reboot': self.schema.reboot_parameters}
 
         for idx, task in enumerate(tasks):
             self.validate_schema(
